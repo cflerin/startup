@@ -1,0 +1,182 @@
+-------------------------------
+Tue Oct  4 22:21:33 EDT 2011
+make -C src/ clean
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+make -C /lib/modules/2.6.38-10-generic/build SUBDIRS=/home/x/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.38-10-generic'
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.38-10-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.38-10-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+-------------------------------
+Tue Oct  4 22:34:05 EDT 2011
+make -C src/ clean
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+make -C /lib/modules/2.6.38-10-generic/build SUBDIRS=/home/x/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.38-10-generic'
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.38-10-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.38-10-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+-------------------------------
+Tue Oct  4 22:43:50 EDT 2011
+make -C src/ clean
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+make -C /lib/modules/2.6.38-10-generic/build SUBDIRS=/home/x/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.38-10-generic'
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.38-10-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.38-10-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/r8168-8.025.00/src'
+-------------------------------
+Fri Dec 30 12:30:45 EST 2011
+make -C src/ clean
+make[1]: Entering directory `/home/x/Downloads/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/Downloads/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/Downloads/r8168-8.025.00/src'
+make -C /lib/modules/2.6.32-37-generic/build SUBDIRS=/home/x/Downloads/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.32-37-generic'
+  CC [M]  /home/x/Downloads/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/Downloads/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/Downloads/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/Downloads/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/Downloads/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/Downloads/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/Downloads/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.32-37-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/Downloads/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/Downloads/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.32-37-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/Downloads/r8168-8.025.00/src'
+-------------------------------
+Wed Sep 12 17:52:43 EDT 2012
+make -C src/ clean
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C /lib/modules/2.6.32-43-generic/build SUBDIRS=/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.32-43-generic'
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.32-43-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.32-43-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+-------------------------------
+Mon Oct 29 12:31:56 EDT 2012
+make -C src/ clean
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C /lib/modules/2.6.32-45-generic/build SUBDIRS=/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.32-45-generic'
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.32-45-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.32-45-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+-------------------------------
+Sun Nov 25 16:10:07 EST 2012
+make -C src/ clean
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+rm -rf *.o *.ko *~ core* .dep* .*.d .*.cmd *.mod.c *.a *.s .*.flags .tmp_versions Module.symvers Modules.symvers Module.markers *.order
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ modules
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C /lib/modules/2.6.32-45-generic/build SUBDIRS=/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src modules
+make[2]: Entering directory `/usr/src/linux-headers-2.6.32-45-generic'
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_n.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168_asf.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtl_eeprom.o
+  CC [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/rtltool.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.mod.o
+  LD [M]  /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.ko
+make[2]: Leaving directory `/usr/src/linux-headers-2.6.32-45-generic'
+strip --strip-debug r8168.ko
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+make -C src/ install
+make[1]: Entering directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'
+install -m 744 -c r8168.ko /lib/modules/2.6.32-45-generic/kernel/drivers/net/
+make[1]: Leaving directory `/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src'

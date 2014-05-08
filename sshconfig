@@ -1,0 +1,9 @@
+Host al1.einstein.yu.edu
+    IdentityFile ~/.ssh/id_dsa_einstein
+Host al2.einstein.yu.edu
+    IdentityFile ~/.ssh/id_dsa_einstein
+Host c1.einstein.yu.edu
+    IdentityFile ~/.ssh/id_dsa_einstein
+Host leo.einstein.yu.edu
+    IdentityFile ~/.ssh/id_dsa_einstein
+

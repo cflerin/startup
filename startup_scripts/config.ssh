@@ -1,0 +1,6 @@
+Host 2X2L
+  IdentityFile ~/.ssh/id_dsa.theAnticipator
+Host 192.168.1.*
+  IdentityFile ~/.ssh/id_dsa.niteowl
+Host *amazon*
+  IdentityFile ~/.ssh/id_dsa.aws_slotCond
