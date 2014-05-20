@@ -31,6 +31,7 @@ PATH=/home/ccampbell/software/samtools\:$PATH; export PATH
 
 PATH=/home/ccampbell/software/motiflocation_20140113\:$PATH; export PATH
 PATH=/home/ccampbell/software/merlin-1.1.2/executables/\:$PATH; export PATH
+PATH=/home/ccampbell/software/msdir/\:$PATH; export PATH
 
 # PATH=/home/ccampbell/software/plink-1.07-x86_64/\:$PATH; export PATH
 # PATH=/home/ccampbell/software/pseqGit/plinkseq/client/\:$PATH; export PATH
