@@ -41,3 +41,8 @@ endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
+
+nnoremap <leader>p A )<esc>I( <esc>I
+
+
+
