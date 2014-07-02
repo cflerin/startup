@@ -17,5 +17,6 @@ options("prompt" = paste(Sys.getpid()," > ",sep=""))
 #options( device="CCpdf" )
 
 options("repos" = c(CRAN = "http://lib.stat.cmu.edu/R/CRAN/"))
+library(setwidth)
 
 
