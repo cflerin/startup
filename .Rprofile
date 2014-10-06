@@ -19,4 +19,5 @@ options("prompt" = paste(Sys.getpid()," > ",sep=""))
 options("repos" = c(CRAN = "http://lib.stat.cmu.edu/R/CRAN/"))
 library(setwidth)
 
+X11.options(width=9.7,height=4)
 
