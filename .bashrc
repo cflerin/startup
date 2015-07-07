@@ -20,6 +20,7 @@ PS1="    \e[0;32m\u @ \h \e[m: \e[1;31m\w\e[m\n$ ";
 #export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 #export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
 
+PATH=/home/ccampbell/software/bin/\:$PATH; export PATH
 
 PATH=/home/ccampbell/software/vcftools/bin\:$PATH ; export PATH
 PATH=/home/ccampbell/software/vcftools/cpp\:$PATH ; export PATH
@@ -32,6 +33,11 @@ PATH=/home/ccampbell/software/samtools\:$PATH; export PATH
 PATH=/home/ccampbell/software/motiflocation_20140113\:$PATH; export PATH
 PATH=/home/ccampbell/software/merlin-1.1.2/executables/\:$PATH; export PATH
 PATH=/home/ccampbell/software/msdir/\:$PATH; export PATH
+PATH=/home/ccampbell/Dropbox/lab/CGmix/bin/\:$PATH; export PATH
+PATH=/home/ccampbell/software/plink-1.07-x86_64/\:$PATH; export PATH
+PATH=/home/ccampbell/software/shapeit/\:$PATH; export PATH
+PATH=/home/ccampbell/software/pedcut_1.19/bin/\:$PATH; export PATH
+PATH=/home/ccampbell/software/duohmm_0.1.4/\:$PATH; export PATH
 
 # PATH=/home/ccampbell/software/plink-1.07-x86_64/\:$PATH; export PATH
 # PATH=/home/ccampbell/software/pseqGit/plinkseq/client/\:$PATH; export PATH

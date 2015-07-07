@@ -1,9 +1,11 @@
 Host al1.einstein.yu.edu
-    IdentityFile ~/.ssh/id_dsa_einstein
+    IdentityFile ~/.ssh/einstein
 Host al2.einstein.yu.edu
-    IdentityFile ~/.ssh/id_dsa_einstein
+    IdentityFile ~/.ssh/einstein
 Host c1.einstein.yu.edu
-    IdentityFile ~/.ssh/id_dsa_einstein
+    IdentityFile ~/.ssh/einstein
 Host leo.einstein.yu.edu
-    IdentityFile ~/.ssh/id_dsa_einstein
-
+    IdentityFile ~/.ssh/einstein
+Host github.com
+    IdentityFile ~/.ssh/github
+    User git
