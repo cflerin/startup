@@ -21,3 +21,9 @@ library(setwidth)
 
 #X11.options(width=9.7,height=4)
 
+if(interactive()) {
+    library(colorout)
+    library(setwidth)
+    options(vimcom.verbose = 1) # optional
+    library(vimcom)
+}

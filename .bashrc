@@ -12,6 +12,7 @@ fi
 # User specific aliases and functions
 alias ls='ls -lh --color=auto'
 alias du='du -h --max-depth=1'
+alias vim="vim --servername VIM"
 
 #PS1="    \e[0;32m\u @ \h \e[m: \e[0;31m\w\e[0;34m\n$ ";
 # PS1="    \e[0;32m\u @ \h \e[m: \e[0;31m\w\e[m\n$ ";
