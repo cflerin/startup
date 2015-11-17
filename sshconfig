@@ -1,3 +1,6 @@
+Host callisto
+    HostName 129.98.107.131
+    IdentityFile ~/.ssh/gateway
 Host al1.einstein.yu.edu
     IdentityFile ~/.ssh/einstein
 Host al2.einstein.yu.edu
