@@ -1,4 +1,3 @@
-# .bashrc
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -14,18 +13,13 @@ alias ls='ls -lh --color=auto'
 alias du='du -h --max-depth=1'
 alias vim="vim --servername VIM"
 
-#PS1="    \e[0;32m\u @ \h \e[m: \e[0;31m\w\e[0;34m\n$ ";
-# PS1="    \e[0;32m\u @ \h \e[m: \e[0;31m\w\e[m\n$ ";
 PS1="    \e[0;32m\u @ \h \e[m: \e[1;31m\w\e[m\n$ ";
-
-#export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
-#export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
 
 PATH=/home/ccampbell/software/bin/\:$PATH; export PATH
 
-PATH=/home/ccampbell/software/vcftools/bin\:$PATH ; export PATH
-PATH=/home/ccampbell/software/vcftools/cpp\:$PATH ; export PATH
-export PERL5LIB=/home/ccampbell/software/vcftools/lib/perl5/site_perl/
+PATH=/home/ccampbell/software/vcftools/src/cpp\:$PATH ; export PATH
+PATH=/home/ccampbell/software/vcftools/src/perl\:$PATH ; export PATH
+export PERL5LIB=/home/ccampbell/software/vcftools/src/perl/
 
 PATH=/home/ccampbell/software/bcftools\:$PATH ; export PATH
 PATH=/home/ccampbell/software/htslib\:$PATH ; export PATH
@@ -39,6 +33,11 @@ PATH=/home/ccampbell/software/plink-1.07-x86_64/\:$PATH; export PATH
 PATH=/home/ccampbell/software/shapeit/\:$PATH; export PATH
 PATH=/home/ccampbell/software/pedcut_1.19/bin/\:$PATH; export PATH
 PATH=/home/ccampbell/software/duohmm_0.1.4/\:$PATH; export PATH
+PATH=/home/ccampbell/software/plinkseq-0.10/\:$PATH; export PATH
 
-# PATH=/home/ccampbell/software/plink-1.07-x86_64/\:$PATH; export PATH
-# PATH=/home/ccampbell/software/pseqGit/plinkseq/client/\:$PATH; export PATH
+export GOPATH=$HOME/tmp/battery
+export GOBIN=$GOPATH/tmp/battery/bin
+export PATH=$PATH:$GOBIN
+
+TERM=xterm-256color
+
