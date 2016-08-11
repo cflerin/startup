@@ -44,6 +44,7 @@ colors slate
 " set lines=50
 " set columns=85
 
+set backspace=2 " enable backspace to erase previously inserted characters
 set mouse=c
 set scrolloff=5
 " set cursorline
