@@ -39,5 +39,5 @@ export GOPATH=$HOME/tmp/battery
 export GOBIN=$GOPATH/tmp/battery/bin
 export PATH=$PATH:$GOBIN
 
-TERM=xterm-256color
+TERM=konsole-256color
 

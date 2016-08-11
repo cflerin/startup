@@ -9,6 +9,7 @@ Plugin 'jpalardy/vim-slime'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " end of vundle requirements
@@ -31,6 +32,10 @@ let g:airline_right_sep=''
 " nerdtree:
 map <C-e> :NERDTreeToggle<CR>
 
+" solarized:
+set background=dark
+colorscheme solarized
+
 syntax enable 
 filetype plugin on 
 filetype indent on 
@@ -43,7 +48,7 @@ set shiftwidth=4
 set autoindent
 "set smartindent
 
-colors slate
+" colors slate
 " set lines=50
 " set columns=85
 
