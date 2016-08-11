@@ -20,17 +20,19 @@ nmap <c-c><c-c> <Plug>SlimeParagraphSend
 nmap <c-c>v     <Plug>SlimeConfig
 
 " airline:
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1        " show tab line
+let g:airline#extensions#tabline#buffer_nr_show = 1 " show buffer number
 set laststatus=2 " enable bottom status on startup
+""" turn off powerline fonts for now:
 " let g:airline_powerline_fonts = 1
-
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 syntax enable 
 filetype plugin on 
 filetype indent on 
 set number
 set hlsearch
-" let vimrplugin_screenplugin = 0
 
 set expandtab
 set tabstop=4
