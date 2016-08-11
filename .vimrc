@@ -28,6 +28,9 @@ set laststatus=2 " enable bottom status on startup
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
+" nerdtree:
+map <C-e> :NERDTreeToggle<CR>
+
 syntax enable 
 filetype plugin on 
 filetype indent on 
