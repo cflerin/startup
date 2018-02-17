@@ -10,15 +10,18 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/Align'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " end of vundle requirements
 
 " vim-slime:
 let g:slime_target = "tmux"
+nmap <c-c><c-l> <Plug>SlimeLineSend
 xmap <c-c><c-c> <Plug>SlimeRegionSend
-nmap <c-c><c-c> <Plug>SlimeParagraphSend
+nmap <c-c><c-p> <Plug>SlimeParagraphSend
 nmap <c-c>v     <Plug>SlimeConfig
+let g:slime_preserve_curpos = 1
 
 " airline:
 let g:airline#extensions#tabline#enabled = 1        " show tab line
