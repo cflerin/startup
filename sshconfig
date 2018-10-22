@@ -1,14 +1,65 @@
 Host callisto
     HostName 129.98.107.131
     IdentityFile ~/.ssh/gateway
-Host al1.einstein.yu.edu
-    IdentityFile ~/.ssh/einstein
-Host al2.einstein.yu.edu
-    IdentityFile ~/.ssh/einstein
-Host c1.einstein.yu.edu
-    IdentityFile ~/.ssh/einstein
-Host leo.einstein.yu.edu
-    IdentityFile ~/.ssh/einstein
 Host github.com
     IdentityFile ~/.ssh/github
     User git
+
+##################################################
+Host loginnode
+    Hostname login.hpc.kuleuven.be
+    User vsc32528 
+    ForwardAgent yes
+    IdentityFile ~/.ssh/vsc
+Host bmw
+    User u0125489
+    ForwardAgent yes
+    HostName bmw.gbiomed.kuleuven.be
+    IdentityFile ~/.ssh/vsc
+Host seq-srv-07x
+    User u0125489
+    ForwardAgent yes
+    Proxycommand ssh -C -q bmw nc gbw-s-seq07.luna.kuleuven.be 22
+    IdentityFile ~/.ssh/vsc
+Host r10n1
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r10n1 22
+    IdentityFile ~/.ssh/vsc
+Host r10n2
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r10n2 22
+    IdentityFile ~/.ssh/vsc
+Host r6i0n5
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r6i0n5 22
+    IdentityFile ~/.ssh/vsc
+Host r6i0n12
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r6i0n12 22
+    IdentityFile ~/.ssh/vsc
+Host r6i0n13
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r6i0n13 22
+    IdentityFile ~/.ssh/vsc
+Host r6i1n12
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r6i1n12 22
+    IdentityFile ~/.ssh/vsc
+Host r6i1n13
+    User vsc32528
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc r6i1n13 22
+    IdentityFile ~/.ssh/vsc
+
+Host dockerbuilder
+    User u0125489
+    ForwardAgent yes
+    Proxycommand ssh -C -q loginnode nc gbw-d-l0083.luna.kuleuven.be 22
+    IdentityFile ~/.ssh/vsc
+##################################################
