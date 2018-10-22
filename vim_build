@@ -20,3 +20,22 @@ cd vim
 sudo checkinstall
 
 
+
+##################################################
+# server install:
+wget http://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz
+
+LDFLAGS=-L$HOME/usr/local/lib ./configure # then add any options e.g. --prefix=$HOME/usr/local
+
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-cscope \
+            --without-x \
+            --prefix=/media/data/chris/software/local/ \
+            --enable-pythoninterp \
+            --with-python-config-dir=/usr/lib/python2.7/config \
+            --enable-python3interp \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
+            --enable-perlinterp \
+            --enable-gui=gtk2 
+
