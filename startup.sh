@@ -1,6 +1,5 @@
 #!/bin/sh
 
-ln -s ~/.startup/abel.sh ~/abel.sh
 ln -s ~/.startup/redshift.sh ~/redshift.sh
 
 mv ~/.bashrc ~/.bashrc_bak
@@ -10,6 +9,9 @@ ln -s ~/.startup/.conkyrc ~/.conkyrc
 ln -s ~/.startup/.Rprofile ~/.Rprofile
 ln -s ~/.startup/.screenrc ~/.screenrc
 ln -s ~/.startup/.tmux.conf ~/.tmux.conf
+ln -s ~/.startup/.gitconfig ~/.gitconfig
+
+mkdir -p ~/software/bin
 
 mkdir ~/.ssh
 cp ~/.startup/sshconfig ~/.ssh/config

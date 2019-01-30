@@ -12,11 +12,12 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # User specific aliases and functions
-alias ls='ls -lh --color=auto'
+alias ls='ls -lh' # --color=auto'
 alias du='du -h --max-depth=1'
-alias vim="vim --servername VIM"
 
 PS1="    \e[0;32m\u @ \h \e[m: \e[1;31m\w\e[m\n$ ";
+
+PATH=~/software/bin\:$PATH ; export PATH
 
 PATH=/home/chris/software/vcftools/src/cpp\:$PATH ; export PATH
 PATH=/home/chris/software/vcftools/src/perl\:$PATH ; export PATH
@@ -36,6 +37,5 @@ TERM=xterm-256color
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# added by Anaconda3 installer
-export PATH="/home/chris/software/anaconda3/bin:$PATH"
+export PROMPT_COMMAND='echo -ne "\033]0;$HOSTNAME\007"'
 
