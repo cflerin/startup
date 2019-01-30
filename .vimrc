@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+" Plugin 'dracula/vim'
 Plugin 'vim-scripts/Align'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,9 +36,13 @@ let g:airline_right_sep=''
 " nerdtree:
 map <C-e> :NERDTreeToggle<CR>
 
-" solarized:
-set background=dark
-colorscheme solarized
+" " solarized:
+" let g:solarized_termcolors=256
+" set background=dark
+" colorscheme solarized
+
+" https://github.com/romainl/flattened
+colorscheme flattened_dark 
 
 syntax enable 
 filetype plugin on 
@@ -93,4 +98,9 @@ hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm
 hi DiffChange ctermbg=255  guibg=#ececec gui=none   cterm=none
 hi DiffText   ctermfg=233  ctermbg=189  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
 hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    cterm=none
+
+
+nnoremap <leader><leader> <C-^>
+" enable shift-tab for insert mode indents
+inoremap <S-Tab> <C-d>
 
