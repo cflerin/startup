@@ -7,10 +7,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jpalardy/vim-slime'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jalvesaq/Nvim-R'
+"Plugin 'jalvesaq/Nvim-R'
 Plugin 'bling/vim-airline'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
-" Plugin 'dracula/vim'
 Plugin 'vim-scripts/Align'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -24,14 +25,19 @@ nmap <c-c><c-p> <Plug>SlimeParagraphSend
 nmap <c-c>v     <Plug>SlimeConfig
 let g:slime_preserve_curpos = 1
 
+let R_assign = 0
+
 " airline:
 let g:airline#extensions#tabline#enabled = 1        " show tab line
 let g:airline#extensions#tabline#buffer_nr_show = 1 " show buffer number
 set laststatus=2 " enable bottom status on startup
 """ turn off powerline fonts for now:
 " let g:airline_powerline_fonts = 1
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+" tmuxline
+let g:tmuxline_powerline_separators = 0
+
 
 " nerdtree:
 map <C-e> :NERDTreeToggle<CR>
