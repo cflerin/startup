@@ -1,1 +1,0 @@
-cmd_/home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-45-generic/scripts/module-common.lds --build-id -o /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.ko /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.o /home/x/Dropbox/scripts/SL2/install/r8168-8.025.00/src/r8168.mod.o
