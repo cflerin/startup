@@ -31,10 +31,8 @@ let R_assign = 0
 let g:airline#extensions#tabline#enabled = 1        " show tab line
 let g:airline#extensions#tabline#buffer_nr_show = 1 " show buffer number
 set laststatus=2 " enable bottom status on startup
-""" turn off powerline fonts for now:
-" let g:airline_powerline_fonts = 1
-" let g:airline_left_sep=''
-" let g:airline_right_sep=''
+set t_Co=256
+let g:airline_powerline_fonts = 1
 " tmuxline
 let g:tmuxline_powerline_separators = 0
 
