@@ -9,9 +9,11 @@ Plugin 'jpalardy/vim-slime'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'jalvesaq/Nvim-R'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
 Plugin 'vim-scripts/Align'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,6 +37,7 @@ set t_Co=256
 let g:airline_powerline_fonts = 1
 " tmuxline
 let g:tmuxline_powerline_separators = 0
+let g:airline_theme='gruvbox'
 
 
 " nerdtree:
@@ -42,11 +45,12 @@ map <C-e> :NERDTreeToggle<CR>
 
 " " solarized:
 " let g:solarized_termcolors=256
-" set background=dark
-" colorscheme solarized
+set background=dark
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='medium'
 
 " https://github.com/romainl/flattened
-colorscheme flattened_dark 
+" colorscheme flattened_dark 
 
 syntax enable 
 filetype plugin on 
