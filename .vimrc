@@ -27,8 +27,6 @@ nmap <c-c><c-p> <Plug>SlimeParagraphSend
 nmap <c-c>v     <Plug>SlimeConfig
 let g:slime_preserve_curpos = 1
 
-let R_assign = 0
-
 " airline:
 let g:airline#extensions#tabline#enabled = 1        " show tab line
 let g:airline#extensions#tabline#buffer_nr_show = 1 " show buffer number
@@ -97,11 +95,6 @@ autocmd InsertLeave * :set relativenumber
 
 nnoremap <leader>p A )<esc>I( <esc>I
 
-" hi DiffAdd       ctermfg=254  ctermbg=22 cterm=NONE
-" hi DiffChange    ctermfg=255  ctermbg=90 cterm=NONE
-" hi DiffDelete    ctermfg=0    ctermbg=52 cterm=NONE
-" hi DiffText      ctermfg=255  ctermbg=9  cterm=NONE
-
 hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm=none
 hi DiffChange ctermbg=255  guibg=#ececec gui=none   cterm=none
 hi DiffText   ctermfg=233  ctermbg=189  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
@@ -111,4 +104,8 @@ hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    
 nnoremap <leader><leader> <C-^>
 " enable shift-tab for insert mode indents
 inoremap <S-Tab> <C-d>
+
+au BufRead,BufNewFile *.nf set filetype=groovy
+au BufRead,BufNewFile nextflow.config set filetype=groovy
+au BufRead,BufNewFile *.config set filetype=groovy
 
