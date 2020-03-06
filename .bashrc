@@ -35,6 +35,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         else
             export PATH="/staging/leuven/stg_00002/lcb/cflerin/software/bin/:$PATH"
             [[ -f "/ddn1/vol1/staging/leuven/stg_00002/lcb/cflerin/software/miniconda3/etc/profile.d/conda.sh" ]] && . "/ddn1/vol1/staging/leuven/stg_00002/lcb/cflerin/software/miniconda3/etc/profile.d/conda.sh"
+            [[ -f "/data/leuven/software/biomed/configuration/bash-completion/bash_completion" ]] && . "/data/leuven/software/biomed/configuration/bash-completion/bash_completion"
         fi
         #if [[ $VSC_INSTITUTE_CLUSTER =~ "thinking" ]]; then
         #    echo ''
