@@ -28,6 +28,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         PATH=/vsc-hard-mounts/leuven-data/325/vsc32528/bin\:$PATH ; export PATH
         module use /data/leuven/software/biomed/${VSC_ARCH_LOCAL}_centos7/2018a/modules/all
         module load Vim
+        umask 027
         if [[ $VSC_INSTITUTE_CLUSTER =~ "tier3" ]]; then
             export PATH="/mnt/beegfs/data/software/singularity3/bin/:$PATH"
             export PATH="/mnt/beegfs/data/users/vsc32528/software/bin/:$PATH"
@@ -47,6 +48,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Miniconda3 (macos):
     [[ -r "/Users/u0125489/software/miniconda3/etc/profile.d/conda.sh" ]] && . "/Users/u0125489/software/miniconda3/etc/profile.d/conda.sh"
+    [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+    source ~/.git-completion.bash
+    export LDFLAGS="-L/usr/local/opt/libffi/lib"
+    export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
 else
     echo ""
 fi
